@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "ListaEstatica.h"
+#include "ListaEstatica.c"
 
 // no prog
 // int x = consulta_lista_ESPECIFICO(li, ESPECIFICO(pos ou mat), &dados_aluno);

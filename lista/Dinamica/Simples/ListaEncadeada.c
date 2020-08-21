@@ -4,7 +4,7 @@
 struct elemento{
     struct aluno dados;
     struct elemento *next;
-}
+};
 typedef struct elemento Elem;
 
 // no prog
@@ -25,7 +25,7 @@ void libera_lista(Lista* li){
         Elem* head;
         while((*li) != NULL){
             head = *li;
-            *li - *li->next;
+            *li - (*li)->next;
         }
         free(li);
     }
@@ -38,7 +38,7 @@ int tamanho_lista(Lista* li){
     if(li == NULL) 
         return 0;
     int cont = 0;
-    Element* head = *li;
+    Elem* head = *li;
     while(head != NULL){
         cont++;
         head = head->next;

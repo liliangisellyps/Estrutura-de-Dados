@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include "ListaEncadeada.h"
+#include "ListaEncadeada.c"
+
 // no prog
 // int x = remove_lista_ESPECIFICO(li);
 
@@ -18,12 +22,12 @@ int remove_lista_final(Lista* li){
         return 0;
     if(*li == NULL)
         return 0;
-    Elemen *ant, *node = *li;
+    Elem *ant, *node = *li;
     while(node->next != NULL){
         ant = node;
         node = node->next;
     }
-    if(no == *li)
+    if(node == *li)
         *li = node->next;
     else 
         ant->next = node->next;
@@ -45,7 +49,7 @@ int remove_lista(Lista* li, int valor){
         if(node == *li) // igual ao primeiro elemento da lista
             *li = node->next;
         else 
-            nt->next = node->next;
+            ant->next = node->next;
         free(node);
         return 1;
 }

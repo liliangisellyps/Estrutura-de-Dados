@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "ListaEstatica.h"
+#include "ListaEstatica.c"
 
 //no prog
 // int x = remove_lista_ESPECIFICO(li);

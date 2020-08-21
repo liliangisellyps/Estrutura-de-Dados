@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "ListaEncadeada.h"
+#include "ListaEncadeada.c"
 
 // no prog
 // int x = insere_lista_ESPECIFICO(li, dados_aluno);

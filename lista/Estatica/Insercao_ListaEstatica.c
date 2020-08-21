@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include "ListaEstatica.h"
+#include "ListaEstatica.c"
 //no prog
 // int x = insere_lista_ESPECIFICAÇÃO(li, dados_aluno);
 
-int insere_lista_vazia(Lista* li, struct aluno al){{
+int insere_lista_vazia(Lista* li, struct aluno al){
     if(lista_vazia(li)){
         li->dados[0] = al;
         li->qtd++;
@@ -15,7 +16,7 @@ int insere_lista_final(Lista* li, struct aluno al){
         return 0;
     if(lista_cheia(li))
         return 0;
-    li->dados[li=>qtd] = al;
+    li->dados[li->qtd] = al;
     li->qtd++;
     return 1;
 }

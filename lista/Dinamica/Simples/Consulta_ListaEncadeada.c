@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include "ListaEncadeada.h"
+#include "ListaEncadeada.c"
 
 int consulta_lista_valor(Lista* li, int valor, struct aluno *al){
     if(li == NULL || valor <= 0)
         return 0;
     Elem *node = *li;
     int i = 1;
-    while(node != NULL && i< pos){
+    while(node != NULL && i<valor){
         node = node->next;
         i++;
     }
@@ -21,7 +22,7 @@ int consulta_lista_valor(Lista* li, int valor, struct aluno *al){
     if(li == NULL)
         return 0;
     Elem *node = *li;
-    while(node != NULL && no->dados.matricula != valor){
+    while(node != NULL && node->dados.matricula != valor){
         node = node->next;
     }
     if(node == NULL) // chegou ao final da lista e nao encontrou
