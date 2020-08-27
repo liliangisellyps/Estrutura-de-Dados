@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.html": "njk",
+        "862_2.C": "cpp",
+        "type_traits": "c"
+    }
+}
