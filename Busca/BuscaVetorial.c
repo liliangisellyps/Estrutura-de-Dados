@@ -8,6 +8,7 @@ int buscaLinear(int *V, int size, int elem){
     return -1; // elemento nao encontrado
 }
 
+// burca ordenada compara ate que o elemento seja menor que o atual, afinal esta ordenado
 int buscaOrdenada(int *V, int size, int elem){
     int i;
     for(i=0; i<size; i++){
@@ -19,7 +20,7 @@ int buscaOrdenada(int *V, int size, int elem){
     }
     return -1; // elemento nao encontrado
 }
-
+// busca binaria compara achando o meio, sempre dividindo a quantidade de elementos a serem comparados pela metade
 int buscaBinaria(int *V, int size, int elem){
     int i, inicio, meio, final;
     inicio = 0;
