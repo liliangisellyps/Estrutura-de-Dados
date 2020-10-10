@@ -4,7 +4,9 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/Grafos"
+                "${workspaceFolder}/Grafos",
+                "${workspaceFolder}/Árvore",
+                "${workspaceFolder}/Árvore/BinaryTree"
             ],
             "defines": [
                 "_DEBUG",
