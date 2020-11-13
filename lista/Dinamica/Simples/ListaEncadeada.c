@@ -25,7 +25,7 @@ void libera_lista(Lista* li){
         Elem* head;
         while((*li) != NULL){
             head = *li;
-            *li - (*li)->next;
+            *li = (*li)->next;
         }
         free(li);
     }

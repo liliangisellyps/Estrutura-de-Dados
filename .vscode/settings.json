@@ -1,6 +1,12 @@
 {
     "files.associations": {
         "*.html": "njk",
-        "SearchBTS.C": "cpp"
+        "SearchBTS.C": "cpp",
+        "array": "c",
+        "functional": "c",
+        "tuple": "c",
+        "type_traits": "c",
+        "utility": "c",
+        "random": "c"
     }
 }
