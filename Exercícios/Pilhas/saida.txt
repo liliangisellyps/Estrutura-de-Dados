@@ -1,2 +1,2 @@
-BACK: 1
-FORWARD: 1
+Coordenada 1: 1292
+Coordenada 2: 1020
